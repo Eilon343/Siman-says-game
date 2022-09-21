@@ -12,6 +12,7 @@ var isLevelFinished = false;
 var isGameStarted = false;
 
 var failAudio = new Audio("sounds/wrong.mp3");
+failAudio.volume = 0.1;
 
 var allBtns = $(".btn");
 
@@ -55,6 +56,7 @@ function nextSequence(){
 function playSound(name){
     const audio = new Audio("sounds/" + name + ".mp3" );
     audio.play();
+    audio.volume = 0.1;
 }
 
 function animatePress(currentColor){
